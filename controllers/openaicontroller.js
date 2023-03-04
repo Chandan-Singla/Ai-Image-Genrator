@@ -8,12 +8,14 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const genrateimg=async(req,res)=>{
+    const{prompt,size}=req.body;
+    imgsize=size==='small'?'256x256':size==='medium'?'512x512':'1024x1024';
     try {
         const response=await openai.createImage({
-            prompt:'Cat drinking coffee with trump',
+            prompt,
             n:1,// number of images to create
-            size:'256x256'
-        })
+            size:imgsize
+        });
         const imgurl=response.data.data[0].url;
         res.status(200).json({
             success:true,
