@@ -5,8 +5,9 @@ Installation
 To install the extension, follow these steps:
 
 Clone or download the repository.
-run Command nodemon index.js in terminal
-![Screenshot 2023-03-07 143217](https://user-images.githubusercontent.com/102845667/223374190-72d2926b-18a1-43d6-ad24-cecb590d2d4f.png)
+run Command nodemon index.js or nodemon s in terminal
+![Screenshot 2023-03-07 144339](https://user-images.githubusercontent.com/102845667/223376985-6dbcc289-d7f9-4f58-90bb-0568a696ae0a.png)
+
 
 Run http://localhost:8000/ in your browser
 
